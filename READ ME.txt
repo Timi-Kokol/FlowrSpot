@@ -1,0 +1,28 @@
+This project uses gulp.js for better development workflow.
+
+You will probably have to install a few missing node modules by running the command "npm install" in the cmd to install the missing packages.
+
+Other useful git commands:
+"gulp" - launches a browser with live code injecting while making changes to the code in the "src" folder
+"gulp build" - automatically generates the production ready "dist" folder with minified versions of .css and .js
+
+
+The styles were written using sass. The files are:
+_mixin.scss - contains some useful mixins that I generated over the years for faster development
+_settings.scss - contains general websites settings, colors, fonts and some other things
+mobile.scss - contains the responsive styles
+styles.scss - this is the main stylesheet
+
+
+I have prepared the full responsive version from desktop to mobile, I hope that is ok. 
+
+You can access the mobile menu by clicking on the hamburger icon in the header, and the profile dropdown by clicking on the profile in the header.
+
+I am also using a jQuery script lib/img-resize.js,
+which is used on <img> tags and automatically scaled the img and centers it both vertically and horizontally in its container. In my opinion
+it is a super useful tool to have to display images, which may have not been cropped before uploading to the CMS, otherwise this is of course
+not needed.
+
+If you have anymore questions, feel free to ask, I would be happy to explain.
+
+Timi
