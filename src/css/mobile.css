@@ -1,0 +1,97 @@
+@media only screen and (max-width: 1200px) {
+  .col8 {
+    max-width: 550px; } }
+
+@media only screen and (max-width: 1100px) {
+  .col3 {
+    width: 33.333%; } }
+
+@media only screen and (max-width: 950px) {
+  .hero-details .cta {
+    float: left;
+    clear: left;
+    margin-top: 28px; }
+  .col8 {
+    max-width: 400px; } }
+
+@media only screen and (max-width: 800px) {
+  .hero-details {
+    margin-bottom: 30px; }
+    .hero-details .pageAlign {
+      height: 188px; }
+    .hero-details .hero-details-card {
+      width: 150px;
+      height: 188px;
+      -webkit-transform: translateY(30px);
+      transform: translateY(30px); }
+    .hero-details .hero-details-info {
+      max-width: 300px;
+      margin-top: 30px; }
+  .flower-content .flower-species {
+    width: 100%; }
+  .flower-content .flower-species-description {
+    width: 100%;
+    margin: 30px 0 0 0;
+    max-width: none; }
+  .col3 {
+    width: 50%; } }
+
+@media only screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0; }
+    header nav {
+      display: none; }
+    header .profile-top {
+      padding: 0; }
+      header .profile-top .name {
+        display: none; }
+    header .hamburger {
+      display: block; }
+  .hero-details {
+    margin-top: 79px; } }
+
+@media only screen and (max-width: 600px) {
+  .hero-details .pageAlign {
+    padding: 0;
+    height: 350px; }
+    .hero-details .pageAlign .hero-details-card {
+      height: 350px;
+      width: 100%;
+      overflow: hidden;
+      -webkit-transform: none;
+      transform: none; }
+      .hero-details .pageAlign .hero-details-card:after {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.5); }
+    .hero-details .pageAlign .hero-details-info {
+      margin: 0;
+      position: absolute;
+      top: auto;
+      bottom: -25px;
+      left: 40px;
+      right: 40px;
+      width: auto; }
+      .hero-details .pageAlign .hero-details-info .titles {
+        width: 100%; }
+      .hero-details .pageAlign .hero-details-info .cta {
+        float: left;
+        margin-top: 43px; }
+  .flower-content .pageAlign {
+    padding: 0 40px; }
+    .flower-content .pageAlign .flower-species-description {
+      margin: 35px 0 0 0; }
+    .flower-content .pageAlign .divider {
+      display: none; }
+  .flower-grid {
+    margin-top: 0; }
+    .flower-grid .pageAlign {
+      padding: 0 16px; }
+    .flower-grid .container {
+      margin: 0; }
+      .flower-grid .container .col3 {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 20px; } }

@@ -1,0 +1,125 @@
+//line height with rem
+@mixin line-height-rem($lineheight ) {
+	line-height: ($lineheight/10) + rem;
+}
+//photoshop values with em
+@mixin letter-spacing-em($letterspacing) {
+	letter-spacing: $letterspacing/1000 + em;
+}
+//photoshop values with px
+@mixin letter-spacing-px($letterspacing, $font-size) {
+	letter-spacing: ($letterspacing * $font-size)/1000 + px;
+}
+//time saver for pseudo icons
+@mixin pseudoIconAfter {
+	position: relative;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+	}
+}
+@mixin pseudoIconBefore {
+	position: relative;
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+	}
+}
+//clear floats
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+//custom transitions
+@mixin transition-custom($property, $duration, $easing) {
+	transition: $property $duration $easing;
+}
+@mixin color-transition {
+	transition: color 0.2s ease-in-out;
+}
+@mixin all-transition {
+	transition: all 0.2s ease-in-out;
+}
+@mixin transition-none {
+	transition: none;
+}
+@mixin box-sizing {
+	box-sizing: border-box;
+}
+@mixin border-radius-value($value) {
+	border-radius: $value;
+}
+//box shadow custom
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+	 @if $inset{
+		box-shadow: inset $top $left $blur $color;
+	}
+	@else {
+		box-shadow: $top $left $blur $color;
+	}
+}
+//vertical gradient
+@mixin gradient($from, $to) {
+	background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background: -moz-linear-gradient(top, $from, $to);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#{$from}', endColorstr='#{$to}');
+}
+//horizontal gradient
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+	/* fallback/image non-cover color */
+	background-color: $from;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+	/* Safari 4+, Chrome 1+ */
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+	/* Safari 5.1+, Chrome 10+ */
+	background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+	/* Opera 11.10+ */
+	background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+	/* IE10+ */
+	background: -ms-linear-gradient(left, $from 0%, $to $stop);
+	/* Standard */
+	background: linear-gradient(to right, $from 0%, $to $stop);
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '$from', endColorstr='$to',GradientType=1 );
+}
+@mixin display-flex {
+	display: flex;
+}
+@mixin display-box {
+	display: box;
+}
+@mixin flex($value) {
+	flex: $value;
+}
+@mixin box-flex($value) {
+	box-flex: $value;
+}
+@mixin flex-flow($value) {
+	flex-flow: $value;
+}
+@mixin align-items($value) {
+	align-items: $value;
+}
+@mixin justify-content($value) {
+	justify-content: $value;
+}
+@mixin box-pack($value) {
+	box-pack: $value;
+}
+@mixin align-self($value) {
+	align-self: $value;
+}
+@mixin flex-direction($value) {
+	flex-direction: $value;
+}
+@mixin box-orient($value) {
+	box-orient: $value;
+}
